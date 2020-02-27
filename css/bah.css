@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-B-bg: #edeef0;
+    --color-B-btn: #95329a;
+    --color-black: black;
+    --color-white: white;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MaSection
+{
+    background: var(--color-B-bg);
+    min-height: 200px;
+    padding: 30px 0;
+}
+
+/*-- Container --*/
+.B-container
+{
+    width: 70%;
+}
+
+/*-- Section Nos Cours --*/
+.Section__Cours
+{
+    /* margin-top: 30px; */
+}
+
+.B-title
+{
+    font-weight: bold;
+}
+
+/* -- navbar-- */
+.B-nav
+{
+    width: 90%;
+}
+
+.B-nav li
+{
+    border-bottom: 1px solid var(--color-black);
+    transition: .2s all;
+}
+
+.B-nav li:hover
+{
+    border-bottom: 1px solid var(--color-B-btn);
+}
+
+.B-nav li:hover a
+{
+    color: var(--color-B-btn);
+}
+
+.B-nav li a
+{
+    color: var(--color-black);
+}
+
+
+
+/*-- Les Cards --*/
+.B-card
+{
+    width: 20%;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+}
+
+.marge-first-card
+{
+    margin-left: 10px;
+}
+
+.marge-card
+{
+    margin-left: 45px;
+}
+
+.B-card img
+{
+    width: 100%;
+}
+
+.B-card-block
+{
+    padding: 5px;
+    min-height: 120px;
+}
+
+.B-card-text
+{
+    font-size: 14px;
+}
+
+.text-bold
+{
+    font-weight: bold;
+}
+
+/* -- bloc tooltip -- */
+.tooltipHiden
+{
+    visibility: hidden;
+    position: absolute;
+    top: -20%;
+    left: 100%; 
+    z-index: 333333;
+}
+.tooltip-bloc
+{
+    width: 145%;
+    margin: 0px 10px;
+    padding: 5px 2px;
+    background: var(--color-white);
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+}
+
+.B-span
+{
+    margin-right: 10px;
+}
+
+.tooltip-bloc ul
+{
+    margin-left: 30px;
+}
+
+.B-btn
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-B-btn);
+    width: 50%;
+    border: none;
+    padding: 5px;
+    color: var(--color-white);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+/* -- affichage tooltip -- */
+.B-card:hover .tooltipHiden
+{
+    visibility: visible;
+}
+
+
+/* -- section formation -- */
+.Section__Formation
+{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+/* Responsive */
+@media (min-width:300px){
+    .B-card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .marge-first-card {
+        margin-left: 0;
+    }
+
+    .marge-card {
+        margin-left: 0;
+    }
+
+    .tooltipHiden
+    {
+        display: none;
+    }
+    .card:hover .tooltipHiden
+    {
+         visibility: hidden;
+    }
+} 
+
+@media screen and (min-width:540px){
+    
+    .marge-first-card {
+        margin-right: 0px;
+        margin-left: 0;
+    }
+
+    .marge-card {
+        margin-left: 0;
+    }
+
+    .B-card {
+        width: 45%;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .tooltipHiden
+    {
+        display: none;
+    }
+    .B-card:hover .tooltipHiden
+    {
+         visibility: hidden;
+    }
+}
+
+@media (min-width: 985px){
+    .marge-first-card {
+        margin-left: 10px;
+    }
+    .B-card {
+        width: 20%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .marge-card {
+        margin-left: 33px;
+    }
+
+    .tooltipHiden
+    {
+        display: block;
+    }
+    .B-card:hover .tooltipHiden
+    {
+         visibility: visible;
+    }
+
+}
