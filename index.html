@@ -5,13 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--My style-->
+    <!-- My styles-->
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bah.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="MaSection">
+     <!-- My NavBar -->
+    <div class="navigation">
+        <div class="container">  
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="images/logo-nan.png" alt=""></a>
+                <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Certification.ci</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Category 1</a>
+                                <a class="dropdown-item" href="#">Category 2</a>
+                                <a class="dropdown-item" href="#">Category 2</a>
+                            </div>
+                        </li>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search Certification & Parcours" aria-label="Search">
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enseigner sur certification.ci</a>
+                        </li>
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart carte"></i></a>
+                        <button class="my-2 my-sm-0 button" type="submit">S'inscrire</button>
+                        <button class="my-2 my-sm-0 button login" type="submit">Se Connecter</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- My Header -->
+    <header class="Iheader">
+        <div class="Iaccueil">
+            <h1>Espace Certification</h1>
+            <p>Bienvenue à vous</p>
+            <div class="Idownload">
+                <a href="#"><img src="images/playstore.png" alt=""></a>
+                <a href="#"><img src="images/playstore.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+
+     <!-- My Services -->
+    <div class="Iservice">
+        <div class="Iservice__detail">
+            <img src="images/certificate.png" alt="">
+            <p>+ de1000 Certifications disponibles<br>explorez une variété de certifcation</p>
+        </div>
+        <div class="Iservice__detail">
+            <img src="images/group.png" alt="">
+            <p>Un suivi assuré<br>Nous vous accompagnons</p>
+        </div>
+        <div class="Iservice__detail">
+            <img src="images/cloud.png" alt="">
+            <p class="Ip">Aucune limite<br>vous pouvez faire plusieurs<br>tentatives</p>
+        </div>
+    </div>
+
+    <!-- Partie 2: Mael -->
+     <div class="MaSection">
         <div class="container B-container">
             <!--Section Nos Cours-->
             <div class="Section__Cours">
@@ -54,33 +122,33 @@
                             <p class="text-right">1200 crédits</p>
                         </div>
                         <!-- tooltip -->
-                    <span class="tooltipHiden">
-                        <div class="tooltip-bloc">
-                            <small>Disponible depuis le 03/2019</small>
-                            <p class="text-capitalize">
-                                Certification microsoft word 2016 niveau expert
-                            </p>
-                            <p>
-                                <small>
-                                    <span class="B-span">Certif inedit</span>
-                                    dans <a href="#">Microsoft</a><span> &#124;</span>
-                                    Bureautique
-                                </small>
-                            </p>
-                            <p class="text-capitalize">
-                                Devenez expert dans l'utilisation de word 2016 et 
-                                formez a l'aide de cette certification d'autre personnes...
-                            </p>
-                            <ul>
-                                <li>Certifiez votre maitrise des options avancées de <strong>World Expert 1</strong></li>
-                                <li>Certifiier votre aptitude de personnalisation de l'outil</li>
-                                <li>Certtifiez votre maitrise de tout les reglages</li>
-                            </ul>
-                            <a href="#">
-                                <button type="button" class="B-btn">S'insccrire</button>
-                            </a>
-                        </div>
-                    </span>
+                        <span class="tooltipHiden">
+                            <div class="tooltip-bloc">
+                                <small>Disponible depuis le 03/2019</small>
+                                <p class="text-capitalize">
+                                    Certification microsoft word 2016 niveau expert
+                                </p>
+                                <p>
+                                    <small>
+                                        <span class="B-span">Certif inedit</span>
+                                        dans <a href="#">Microsoft</a><span> &#124;</span>
+                                        Bureautique
+                                    </small>
+                                </p>
+                                <p class="text-capitalize">
+                                    Devenez expert dans l'utilisation de word 2016 et 
+                                    formez a l'aide de cette certification d'autre personnes...
+                                </p>
+                                <ul>
+                                    <li>Certifiez votre maitrise des options avancées de <strong>World Expert 1</strong></li>
+                                    <li>Certifiier votre aptitude de personnalisation de l'outil</li>
+                                    <li>Certtifiez votre maitrise de tout les reglages</li>
+                                </ul>
+                                <a href="#">
+                                    <button type="button" class="B-btn">S'insccrire</button>
+                                </a>
+                            </div>
+                        </span>
                     </div>
                     <div class="card B-card marge-card">
                         <img src="images/photo-of-bedroom-1454806.jpg" alt="">
@@ -97,33 +165,33 @@
                             <p class="text-right">1200 crédits</p>
                         </div>
                         <!-- tooltip -->
-                    <span class="tooltipHiden">
-                        <div class="tooltip-bloc">
-                            <small>Disponible depuis le 03/2019</small>
-                            <p class="text-capitalize">
-                                Certification microsoft word 2016 niveau expert
-                            </p>
-                            <p>
-                                <small>
-                                    <span class="B-span">Certif inedit</span>
-                                    dans <a href="#">Microsoft</a><span> &#124;</span>
-                                    Bureautique
-                                </small>
-                            </p>
-                            <p class="text-capitalize">
-                                Devenez expert dans l'utilisation de word 2016 et 
-                                formez a l'aide de cette certification d'autre personnes...
-                            </p>
-                            <ul>
-                                <li>Certifiez votre maitrise des options avancées de <strong>World Expert 1</strong></li>
-                                <li>Certifiier votre aptitude de personnalisation de l'outil</li>
-                                <li>Certtifiez votre maitrise de tout les reglages</li>
-                            </ul>
-                            <a href="#">
-                                <button type="button" class="B-btn">S'insccrire</button>
-                            </a>
-                        </div>
-                    </span>
+                        <span class="tooltipHiden">
+                            <div class="tooltip-bloc">
+                                <small>Disponible depuis le 03/2019</small>
+                                <p class="text-capitalize">
+                                    Certification microsoft word 2016 niveau expert
+                                </p>
+                                <p>
+                                    <small>
+                                        <span class="B-span">Certif inedit</span>
+                                        dans <a href="#">Microsoft</a><span> &#124;</span>
+                                        Bureautique
+                                    </small>
+                                </p>
+                                <p class="text-capitalize">
+                                    Devenez expert dans l'utilisation de word 2016 et 
+                                    formez a l'aide de cette certification d'autre personnes...
+                                </p>
+                                <ul>
+                                    <li>Certifiez votre maitrise des options avancées de <strong>World Expert 1</strong></li>
+                                    <li>Certifiier votre aptitude de personnalisation de l'outil</li>
+                                    <li>Certtifiez votre maitrise de tout les reglages</li>
+                                </ul>
+                                <a href="#">
+                                    <button type="button" class="B-btn">S'insccrire</button>
+                                </a>
+                            </div>
+                        </span>
                     </div>
                     <div class="card B-card marge-card">
                         <img src="images/photo-of-bedroom-1454806.jpg" alt="">
@@ -416,7 +484,142 @@
             </div>
         </div>
     </div>
+
+    <!-- Partie 3 : Mida -->
+     <!-- Fisrt Part of Section 3  -->
+    <div class="container-fluid h-100">
+        <div class="my__icon">
+            <ul class="ul">
+                <li class=" icon-one ">
+                    <img src="images/smart.png" alt="desktop" class="m-img">
+                </li>
+                <li class=" icon-one ">
+                    <img src="images/desktgey.png" alt="desktop" class="m-img">
+                </li>
+                <li class=" icon-one ">
+                    <img src="images/arlgrey.png" alt="desktop" class="m-img">
+                </li>
+                <li class="icon-one" >
+                    <img src="images/flask-1.png" alt="desktop" class="m-img">
+                </li>
+                <li class="icon-one ">
+                    <img src="images/document.png" alt="desktop" class="m-img">
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-10 align-self-end">
+                <h1 class=" text-white ">Obtenir des recommandation personnaliseés</h1>
+                <p  class=" text-white ">
+                    Repondez à quelques questions pour
+                    vos selections preferés
+                </p>
+                <a href=""> <button type="button" class="button m-btn "> premier pas</button></a>  
+              </div>
+            </div>
+        </div>
+          <!-- icon two -->
+        <div class=" container " id="icon_two">
+            <ul class="ul">
+                <li class=" icon-one ">
+                    <img src="images/smart.png" alt="desktop" class="m-img">
+                </li>
+                <li class=" icon-one ">
+                    <img src="images/desktgey.png" alt="desktop" class="m-img">
+                </li>
+                <li class=" icon-one ">
+                    <img src="images/arlgrey.png" alt="desktop" class="m-img">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- second Part Of Section 3 -->
+    <div class="container second">
+        <h2>Meilleur Categories</h2>
+        <div class="row fisrt-row justify-content-between ">
+            <div class=" col-md-6 col-lg-3  ">
+                <div class="description-one__illustration">
+                        <img src="images/desktop.png" alt="destop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3   ">
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+            <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 "> 
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+        </div>
+        <div class="row fisrt-row">
+            <div class=" col-md-6 col-lg-3 col-md-3  ">
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="destop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3 col-md-3  ">
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3 "> 
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+            <div class=" col-md-6 col-lg-3">
+                <div class="description-one__illustration">
+                    <img src="images/desktop.png" alt="desktop" class="m-img">
+                </div>
+                <div class="text">
+                    <span>Microsoft expert1</span>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- My Scripts -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
 </body>
 </html>

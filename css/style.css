@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-B-bg: #edeef0;
+    --color-B-btn: #95329a;
+    --color-black: black;
+    --color-white: white;
+
+    --color-primary: #983298;
+    --color-black: black;
+    --color-grey: #737373;
+    --color-head: #80939a;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-B-bg);
+}
+
+/* ******************** Diallo Part ****************************** */
+
+/* CSS Of Nav Bar */
+
+.navigation
+{
+    background-color: black;
+}
+
+.navbar-brand img
+{
+    height: 40px;
+    width: 50px;
+}
+
+.nav-link
+{
+    color: #737373;
+}
+
+.nav-link:hover
+{
+    color: #737373;
+}
+
+.tog
+{
+    color: blue;
+}
+
+.form-control
+{
+    width: 300px;
+}
+
+i
+{
+    color: var(--color-grey);
+}
+
+.button
+{
+    border: 1px solid var(--color-head);
+    background-color: transparent;
+    color: #737373;
+    border-radius: 4px;
+}
+
+.button:hover
+{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+.login
+{
+    margin-left: 15px;
+}
+
+.Iheader
+{
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--color-head);
+}
+
+.Iaccueil
+{
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+.Iaccueil h1
+{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.Iaccueil p
+{
+    font-size: 25px;
+}
+
+.Idownload img
+{
+    width: 145px;
+    height: 65px;
+    margin: 50px 10px;
+}
+
+.Idownload img:hover
+{
+    border: 0.8px solid wheat;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* CSS Of Service */
+
+.Iservice
+{
+    width: 100%;
+    min-height: 115px;
+    background-color: var(--color-primary);
+    display: flex;
+    padding-left: o auto;
+    margin-bottom: 50px;
+}
+
+.Iservice__detail
+{
+    display: flex;
+    padding-top: 2.2%;
+    margin: 0 auto;
+    min-width: 200px;
+}
+
+.Iservice__detail img
+{
+    height: 55px;
+    width: 55px;
+    margin-left: 10px;
+}
+
+.Iservice__detail p
+{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.Ip
+{
+    margin-top: -10px;
+}
+
+
+/* ******************* Mael ******************************************* */
+
+.MaSection
+{
+    min-height: 200px;
+    padding: 30px 0;
+}
+
+/*-- Container --*/
+.B-container
+{
+    width: 70%;
+}
+
+/*-- Section Nos Cours --*/
+.B-title
+{
+    font-weight: bold;
+}
+
+/* -- navbar-- */
+.B-nav
+{
+    width: 90%;
+}
+
+.B-nav li
+{
+    border-bottom: 1px solid var(--color-black);
+    transition: .2s all;
+}
+
+.B-nav li:hover
+{
+    border-bottom: 1px solid var(--color-B-btn);
+}
+
+.B-nav li:hover a
+{
+    color: var(--color-B-btn);
+}
+
+.B-nav li a
+{
+    color: var(--color-black);
+}
+
+
+
+/*-- Les Cards --*/
+.B-card
+{
+    width: 20%;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+}
+
+.marge-first-card
+{
+    margin-left: 10px;
+}
+
+.marge-card
+{
+    margin-left: 45px;
+}
+
+.B-card img
+{
+    width: 100%;
+}
+
+.B-card-block
+{
+    padding: 5px;
+    min-height: 120px;
+}
+
+.B-card-text
+{
+    font-size: 14px;
+}
+
+.text-bold
+{
+    font-weight: bold;
+}
+
+/* -- bloc tooltip -- */
+.tooltipHiden
+{
+    visibility: hidden;
+    position: absolute;
+    top: -20%;
+    left: 100%; 
+    z-index: 333333;
+}
+.tooltip-bloc
+{
+    width: 145%;
+    margin: 0px 10px;
+    padding: 5px 2px;
+    background: var(--color-white);
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+}
+
+.B-span
+{
+    margin-right: 10px;
+}
+
+.tooltip-bloc ul
+{
+    margin-left: 30px;
+}
+
+.B-btn
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-B-btn);
+    width: 50%;
+    border: none;
+    padding: 5px;
+    color: var(--color-white);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+/* -- affichage tooltip -- */
+.B-card:hover .tooltipHiden
+{
+    visibility: visible;
+}
+
+
+/* -- section formation -- */
+.Section__Formation
+{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+/* ------------------ Parte 3 : Mida -------------------------------- */
+
+.container-fluid
+{
+    background: #292f3b;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+}
+
+.my__icon
+{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon
+{
+  width: 60px;
+  height: 60px;
+}
+
+.ul li
+{
+   list-style: none;
+}
+
+.image
+{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+.m-btn
+{
+    height: 40px;
+    width: 150px;
+    border-radius: 7px;
+    background-color: #983296;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.m-btn:hover
+{
+    background-color: rgb(145, 14, 14);
+}
+
+.m-btn:focus
+{
+    outline: none;
+}
+
+/* icon two */
+#icon_two 
+{
+    height: 50px;
+    padding: 20px;  
+}
+
+/* second Part Of Section 3 */
+.second
+{
+    height: 300px;
+    margin-top: 30px;
+}
+
+.fisrt-row
+{
+    width: 100%;
+}
+
+.col-lg-3
+{
+    height: 60px;
+    align-items: center;
+    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: 3px 8px 33px -6px rgba(0,0,0,0.21);
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.m-description-one
+{
+    flex: 1;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-one{
+    height: 30px;
+    width: 30px;
+}
+
+.description-one__illustration{
+    height: 60px;
+    width: 60px;
+}
+
+.m-img
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-md-6
+{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************ Responsive ***************************** */
+
+/* ---------- Diallo Part ------- */
+
+@media screen and (max-width: 480px)
+{
+
+    .button
+    {
+        background-color: var(--color-head);
+        color: white;
+    }
+
+    .login
+    {
+        background-color: var(--color-primary);
+    }
+
+    .Iheader
+    {
+        width: 100%;
+        background-color: var(--color-head);
+        /* height: 300px; */
+        padding: 0;
+    }
+
+    .Iaccueil
+    {
+        text-align: center;
+    }
+
+    .Iaccueil h1
+    {
+        font-size: 40px;
+        text-align: center,
+    }
+
+    .Iaccueil p
+    {
+        font-size: 25px;
+    }
+
+    .Idownload img
+    {
+        height: 40px;
+        width: 70px;
+    }
+
+    .Iservice
+    {
+        width: 100%;
+        min-height: 200px;
+        background-color: var(--color-primary);
+        display: block;
+    }
+
+    .Iservice__detail
+    {
+        width: 100%;
+        min-height: 60px;
+        border-bottom: 1px solid #80939a;
+    }
+
+    .Iservice__detail img
+    {
+        margin: auto 0;
+    }
+
+    .Iservice__detail p
+    {
+        font-size: 15px;
+    }
+
+}
+
+
+/* -------------------------- Mael -------------------------------------- */
+/* Responsive */
+@media (min-width:300px){
+    .B-card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .marge-first-card {
+        margin-left: 0;
+    }
+
+    .marge-card {
+        margin-left: 0;
+    }
+
+    .tooltipHiden
+    {
+        display: none;
+    }
+    .card:hover .tooltipHiden
+    {
+         visibility: hidden;
+    }
+} 
+
+@media screen and (min-width:540px){
+    
+    .marge-first-card {
+        margin-right: 0px;
+        margin-left: 0;
+    }
+
+    .marge-card {
+        margin-left: 0;
+    }
+
+    .B-card {
+        width: 45%;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .tooltipHiden
+    {
+        display: none;
+    }
+    .B-card:hover .tooltipHiden
+    {
+         visibility: hidden;
+    }
+}
+
+@media (min-width: 985px){
+    .marge-first-card {
+        margin-left: 10px;
+    }
+    .B-card {
+        width: 20%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .marge-card {
+        margin-left: 33px;
+    }
+
+    .tooltipHiden
+    {
+        display: block;
+    }
+    .B-card:hover .tooltipHiden
+    {
+         visibility: visible;
+    }
+
+}
