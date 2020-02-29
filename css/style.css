@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root{
+    --color-principal: #d9dadc;
     --color-B-bg: #edeef0;
     --color-B-btn: #95329a;
     --color-black: black;
@@ -10,6 +11,8 @@
     --color-black: black;
     --color-grey: #737373;
     --color-head: #80939a;
+
+    --color-bg-footer: #edeef0;
 }
 
 *,
@@ -26,7 +29,7 @@ html{
 body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background: var(--color-B-bg);
+    background: var(--color-principal);
 }
 
 /* ******************** Diallo Part ****************************** */
@@ -396,7 +399,7 @@ i
     width: 100%;
 }
 
-.col-lg-3
+.m-bloc
 {
     height: 60px;
     align-items: center;
@@ -438,39 +441,124 @@ i
     margin-top: 10px;
 }
 
+/* ***************** Last part ************ */
+/* -------------Niamson-------------------- */
 
+.monCarousel
+{
+     min-height: 300px;
+}
 
+.N-row
+{
+    
+    width: 100%;
+    margin: 30px 0 70px;
+}
 
+.maCard
+{
+    width: 30%;
+    min-height: 100px;
+}
 
+.cardCenter
+{
+    margin: 0px 10px;
+}
 
+.card-head
+{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    align-items: center;
+}
 
+.monImage
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: -12px;
+    float: left;
+}
 
+.B-card-body p
+{
+    clear: both;
+}
 
+/* --- Footer --- */
+.B-footer
+{
+    margin-top: 30px;
+    background: var(--color-bg-footer);
+    width: 100%;   
+}
 
+.B-footer-element
+{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 
+.B-footer ul
+{
+    list-style: none;
+}
 
+.B-footer ul li
+{
+    padding: 5px;
+}
 
+.B-footer ul li:hover a
+{
+  color: var(--color-B-btn);
+}
 
+.B-footer ul li a
+{
+    color: var(--color-black);
+}
 
+.B-footer ul li a:hover
+{
+    text-decoration: none;
+}
 
+.B-icon-footer
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
 
+.Appstore-footer
+{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
 
+.copyright
+{
+    background: var(--color-black);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.copyright p
+{
+    color: var(--color-white);
+}
 
 
 /* ************************ Responsive ***************************** */
 
+/* ---------- Part 1 : Nav and Header ----------- */
 /* ---------- Diallo Part ------- */
 
 @media screen and (max-width: 480px)
@@ -544,10 +632,20 @@ i
 
 }
 
-
+/* -------------------------- Part 2-------------------------------------- */
 /* -------------------------- Mael -------------------------------------- */
 /* Responsive */
 @media (min-width:300px){
+    .B-nav
+    {
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .B-nav li
+    {
+        border-bottom: none;
+    }
+
     .B-card {
         width: 100%;
         margin-top: 20px;
@@ -572,6 +670,16 @@ i
 } 
 
 @media screen and (min-width:540px){
+
+    .B-nav
+    {
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .B-nav li
+    {
+        border-bottom: none;
+    }
     
     .marge-first-card {
         margin-right: 0px;
@@ -599,6 +707,15 @@ i
 }
 
 @media (min-width: 985px){
+    .B-nav
+    {
+        border-bottom: none;
+    }
+
+    .B-nav li
+    {
+        border-bottom: 1px solid var(--color-black);
+    }
     .marge-first-card {
         margin-left: 10px;
     }
@@ -621,4 +738,103 @@ i
          visibility: visible;
     }
 
+}
+
+/* ------------------Last Part AND footer------ */
+/* ------------------ Niamson --------------- */
+@media screen and (max-width: 367px){
+    .sectionSlide
+    {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (min-width: 368px){
+    .sectionSlide
+    {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .NfirstCard,
+    .NlastCard
+    {
+        display: none;
+    }
+
+    .maCard
+    {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .cardCenter
+    {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 551px){
+    .NlastCard{
+        display: none;
+    }
+
+    .maCard
+    {
+        width: 40%;
+        min-height: 100px;
+    }
+    .cardCenter
+    {
+        margin-left: 70px;
+    }
+
+    .card-head
+    {
+        text-align: center;
+    }
+    .monImage
+    {
+       float: none;
+       margin-bottom: 15px;
+       
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .NfirstCard,
+    .NlastCard
+    {
+        display: block;
+    }
+
+    .maCard
+    {
+        width: 30%;
+        min-height: 100px;
+    }
+
+    .cardCenter
+    {
+        margin: 0px 10px;
+    }
+
+    .card-head
+    {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .card-head
+    {
+        text-align: left;
+    }
+
+    .monImage
+    {
+        float: left;
+    }
 }
