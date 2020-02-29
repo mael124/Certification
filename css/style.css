@@ -62,9 +62,14 @@ body{
     color: blue;
 }
 
+.form-inline
+{
+    widows: 300px;
+}
+
 .form-control
 {
-    width: 300px;
+    width: 100%;
 }
 
 i
@@ -78,6 +83,7 @@ i
     background-color: transparent;
     color: #737373;
     border-radius: 4px;
+    width: 100px;
 }
 
 .button:hover
@@ -90,6 +96,7 @@ i
 .login
 {
     margin-left: 15px;
+    width: 120px;
 }
 
 .Iheader
@@ -561,7 +568,7 @@ i
 /* ---------- Part 1 : Nav and Header ----------- */
 /* ---------- Diallo Part ------- */
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 750px)
 {
 
     .button
