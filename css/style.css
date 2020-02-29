@@ -39,6 +39,7 @@ body{
 .navigation
 {
     background-color: black;
+    padding: 0 20px;
 }
 
 .navbar-brand img
@@ -64,10 +65,10 @@ body{
 
 .form-inline
 {
-    widows: 300px;
+    width: 300px;
 }
 
-.form-control
+#search
 {
     width: 100%;
 }
