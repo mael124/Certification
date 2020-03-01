@@ -44,7 +44,7 @@ body{
 
 .navbar-brand img
 {
-    height: 40px;
+    min-height: 40px;
     width: 50px;
 }
 
@@ -56,11 +56,6 @@ body{
 .nav-link:hover
 {
     color: #737373;
-}
-
-.tog
-{
-    color: blue;
 }
 
 .form-inline
@@ -103,7 +98,7 @@ i
 .Iheader
 {
     width: 100%;
-    min-height: 250px;
+    min-min-height: 250px;
     background-color: var(--color-head);
 }
 
@@ -125,10 +120,15 @@ i
     font-size: 25px;
 }
 
+.Idownload
+{
+    margin-top: -50px;
+}
+
 .Idownload img
 {
     width: 145px;
-    height: 65px;
+    min-height: 65px;
     margin: 50px 10px;
 }
 
@@ -144,7 +144,7 @@ i
 .Iservice
 {
     width: 100%;
-    min-height: 115px;
+    min-min-height: 115px;
     background-color: var(--color-primary);
     display: flex;
     padding-left: o auto;
@@ -161,7 +161,7 @@ i
 
 .Iservice__detail img
 {
-    height: 55px;
+    min-height: 55px;
     width: 55px;
     margin-left: 10px;
 }
@@ -182,7 +182,7 @@ i
 
 .MaSection
 {
-    min-height: 200px;
+    min-min-height: 200px;
     padding: 30px 0;
 }
 
@@ -254,7 +254,7 @@ i
 .B-card-block
 {
     padding: 5px;
-    min-height: 120px;
+    min-min-height: 120px;
 }
 
 .B-card-text
@@ -280,7 +280,7 @@ i
 {
     width: 145%;
     margin: 0px 10px;
-    padding: 5px 2px;
+    padding: 5px 8px;
     background: var(--color-white);
     font-size: 13px;
     border-radius: 5px;
@@ -330,7 +330,7 @@ i
 .container-fluid
 {
     background: #292f3b;
-    height: 300px;
+    min-height: 300px;
     padding: 20px;
     position: relative;
 }
@@ -351,7 +351,7 @@ i
 .icon
 {
   width: 60px;
-  height: 60px;
+  min-height: 60px;
 }
 
 .ul li
@@ -362,13 +362,13 @@ i
 .image
 {
     width: 50px;
-    height: auto;
+    min-height: auto;
     object-fit: cover;
 }
 
 .m-btn
 {
-    height: 40px;
+    min-height: 40px;
     width: 150px;
     border-radius: 7px;
     background-color: #983296;
@@ -391,7 +391,7 @@ i
 /* icon two */
 #icon_two 
 {
-    height: 50px;
+    min-height: 50px;
     padding: 20px;  
 }
 
@@ -409,7 +409,8 @@ i
 
 .m-bloc
 {
-    height: 60px;
+    min-height: 60px;
+    padding: 12px 5px;
     align-items: center;
     margin-left: 10px;
     background-color: #fff;
@@ -422,25 +423,25 @@ i
 .m-description-one
 {
     flex: 1;
-    height: 120px;
+    min-height: 120px;
     display: flex;
     align-items: center;
 }
 
 .icon-one{
-    height: 30px;
+    min-height: 30px;
     width: 30px;
 }
 
 .description-one__illustration{
-    height: 60px;
+    min-height: 60px;
     width: 60px;
 }
 
 .m-img
 {
     width: 100%;
-    height: auto;
+    min-height: auto;
     object-fit: cover;
 }
 
@@ -454,7 +455,7 @@ i
 
 .monCarousel
 {
-     min-height: 300px;
+     min-min-height: 300px;
 }
 
 .N-row
@@ -467,7 +468,7 @@ i
 .maCard
 {
     width: 30%;
-    min-height: 100px;
+    min-min-height: 100px;
 }
 
 .cardCenter
@@ -485,7 +486,7 @@ i
 .monImage
 {
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     margin-right: 10px;
     margin-top: -12px;
     float: left;
@@ -538,7 +539,7 @@ i
 .B-icon-footer
 {
     width: 50px;
-    height: 50px;
+    min-height: 50px;
     margin-left: 10px;
 }
 
@@ -587,7 +588,7 @@ i
     {
         width: 100%;
         background-color: var(--color-head);
-        /* height: 300px; */
+        /* min-height: 300px; */
         padding: 0;
     }
 
@@ -609,14 +610,14 @@ i
 
     .Idownload img
     {
-        height: 40px;
+        min-height: 40px;
         width: 70px;
     }
 
     .Iservice
     {
         width: 100%;
-        min-height: 200px;
+        min-min-height: 200px;
         background-color: var(--color-primary);
         display: block;
     }
@@ -624,7 +625,7 @@ i
     .Iservice__detail
     {
         width: 100%;
-        min-height: 60px;
+        min-min-height: 60px;
         border-bottom: 1px solid #80939a;
     }
 
@@ -774,7 +775,7 @@ i
     .maCard
     {
         width: 100%;
-        min-height: 100px;
+        min-min-height: 100px;
     }
 
     .cardCenter
@@ -791,7 +792,7 @@ i
     .maCard
     {
         width: 40%;
-        min-height: 100px;
+        min-min-height: 100px;
     }
     .cardCenter
     {
@@ -821,7 +822,7 @@ i
     .maCard
     {
         width: 30%;
-        min-height: 100px;
+        min-min-height: 100px;
     }
 
     .cardCenter
