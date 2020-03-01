@@ -254,7 +254,7 @@ i
 .B-card-block
 {
     padding: 5px;
-    min-min-height: 120px;
+    min-height: 120px;
 }
 
 .B-card-text
@@ -280,7 +280,7 @@ i
 {
     width: 145%;
     margin: 0px 10px;
-    padding: 5px 8px;
+    padding: 7px 15px;
     background: var(--color-white);
     font-size: 13px;
     border-radius: 5px;
