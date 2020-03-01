@@ -60,7 +60,7 @@ body{
 
 .form-inline
 {
-    width: 300px;
+    width: 275px;
 }
 
 #search
@@ -79,7 +79,7 @@ i
     background-color: transparent;
     color: #737373;
     border-radius: 4px;
-    width: 100px;
+    width: 80px;
 }
 
 .button:hover
@@ -92,7 +92,7 @@ i
 .login
 {
     margin-left: 15px;
-    width: 120px;
+    width: 115px;
 }
 
 .Iheader
@@ -144,7 +144,7 @@ i
 .Iservice
 {
     width: 100%;
-    min-min-height: 115px;
+    min-height: 115px;
     background-color: var(--color-primary);
     display: flex;
     padding-left: o auto;
@@ -182,7 +182,7 @@ i
 
 .MaSection
 {
-    min-min-height: 200px;
+    min-height: 200px;
     padding: 30px 0;
 }
 
